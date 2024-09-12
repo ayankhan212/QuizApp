@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Start</title>
+
+    
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/030/935/152/small_2x/futuristic-and-clean-stage-blank-center-background-loop-ai-generated-free-video.jpg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            
+        }
+        .ahide {
+            display: none;
+
+        }
+
+
+        .container {
+            text-align: center;
+            background-image: url('https://pbs.twimg.com/ext_tw_video_thumb/1430113963283410944/pu/img/HJZ5Cp97N6wkNQsL.jpg:large');
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+     <audio  class="ahide"></audio>
+        <source src="kbc.mp3">
+    </audio>
+</head>
+<body>
+    <div class="container">
+        <!-- <a href="">play</a> -->
+        <h1 style="color: #fff;">Welcome to the KBC!</h1>
+        <p>Ready to test your knowledge? Click the button below to start the quiz.</p>
+        <a href="/index.html" class="button">Start Quiz</a>
+    </div>
+</body>
+</html>
+<script>
+    function audio()
+    {
+        var a=new Audio('kbc.mp3')
+        a.play()
+    }
+    audio()
+</script>
